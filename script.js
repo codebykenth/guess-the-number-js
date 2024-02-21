@@ -11,13 +11,14 @@ let currentScoreText = document.querySelector(".current-score");
 let userAnswer;
 
 let randomNum = Math.trunc(Math.random() * 20) + 1;
-let currentScore = 20;
+let currentScore = 10;
 let highScore = 0;
 // again.classList.remove("hidden"); // Will only be displayed when the game ends
 
 const init = function () {
-  currentScore = 20;
+  currentScore = 10;
   randomNum = Math.trunc(Math.random() * 20) + 1;
+  question.textContent = "?";
 
   document.querySelector(".check-answer").style.display = "block";
   document.querySelector(".reset").style.display = "block";
@@ -108,7 +109,8 @@ againBtn.addEventListener("click", function () {
 
 resetBtn.addEventListener("click", function () {
   randomNum = Math.trunc(Math.random() * 20) + 1;
+  displayHint("Start guessing...🤔");
   answer.value = "";
-  currentScore = 20;
+  currentScore = 10;
   displayCurrentScore(currentScore);
 });
