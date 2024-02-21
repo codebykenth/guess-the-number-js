@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: azure;
+}
+
+body {
+  background-color: #333;
+}
+.title {
+  text-align: center;
+  color: orange;
+  font-size: 2.7rem;
+  padding: 2rem 0;
+  background-color: rgb(37, 36, 36);
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+
+/* Correct answer */
+.correct-answer {
+  background: green;
+  color: #eee;
+}
+
+.wrong-answer {
+  background: red;
+  color: #eee;
+}
+
+/* xs */
+@media screen and (min-width: 400px) {
+  .question {
+    margin: auto;
+    font-size: 6rem;
+    border: 5px solid #eee;
+    padding: 1rem 4rem;
+    margin-top: 3rem;
+    width: fit-content;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .answer {
+    display: block;
+    margin: auto;
+    border: 5px solid #eee;
+    width: 11.1rem;
+    height: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 3rem;
+  }
+
+  .check-answer {
+    display: block;
+    background: green;
+  }
+
+  .again {
+    display: none;
+    background: orange;
+    color: rgb(37, 36, 36);
+  }
+  .check-answer,
+  .again {
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    outline: auto;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+
+  .check-answer:active {
+    background: teal;
+    color: #eee;
+  }
+
+  .hint {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: orangered;
+  }
+
+  .score-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .reset {
+    display: block;
+    background: none;
+    outline: auto;
+    padding: 1rem;
+    /* width: 11.1rem;
+    height: 6rem; */
+    text-align: center;
+    font-size: 0.8rem;
+    color: #eee;
+  }
+
+  .reset:active {
+    background: red;
+    color: #eee;
+  }
+
+  .scores {
+    font-size: 1.5rem;
+  }
+}
+/* sm */
+@media screen and (min-width: 640px) {
+}
+/* md */
+@media screen and (min-width: 768px) {
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+}
